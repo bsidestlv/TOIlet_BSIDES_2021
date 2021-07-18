@@ -16,7 +16,10 @@ ln -s /home/bsides/node-v10.24.1-linux-x64/bin/npm /usr/local/bin/npm
 npm install -g pm2
 npm install express
 
+chmod 300 /home/bsides
+
 mkdir -p /root/flag
+chmod 400 /root/flag
 echo "/dev/sdb        /root/flag      ext4    defaults,ro     0       0" >> /etc/fstab
 
 echo auto enp0s3 >> /etc/network/interfaces
